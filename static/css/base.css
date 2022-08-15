@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --red: #ed1d24;
+  --black: #151515;
+}
+
+.navbar {
+  background-color: var(--red);
+}
+
+.navbar a {
+  text-transform: uppercase;
+  color: white;
+}
+
+.navbar .navbar-brand:hover {
+  color: white;
+}
+
+.navbar .navbar-nav {
+  margin-left: 15px;
+}
+
+.navbar .nav-link {
+  color: white;
+  text-decoration: none;
+  margin-right: 2rem;
+  background: linear-gradient(to left, var(--red) 50%, white 50%) right;
+  background-size: 250%;
+  transition: 0.25s ease-out;
+  padding: 0.2rem;
+}
+
+.navbar .nav-link:hover {
+  background-position: 0 150%;
+  color: var(--red);
+}
+
+.footer {
+  flex: 0 0 50px; /*or just height:50px;*/
+  margin-top: auto;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--black);
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.container {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.banner {
+  background-image: url(/static/img/banner.png);
+  height: 500px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome {
+  text-align: center;
+  color: white;
+}
+
+.welcome .welcome-text {
+  text-transform: uppercase;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.welcome .introduction-text {
+  font-size: 18px;
+  font-style: italic;
+  margin-bottom: 25px;
+}
+
+.welcome a {
+  font-size: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--red);
+  background-color: white;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.welcome a:hover {
+  color: white;
+  background-color: var(--red);
+  border: 0.5px solid white;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-phone,
+.contact-mail {
+  background-color: var(--black);
+  color: white;
+  text-align: center;
+  padding: 75px 75px;
+}
+
+.contact-phone i,
+.contact-mail i {
+  background-color: white;
+  padding: 15px;
+  color: var(--black);
+  border-radius: 100%;
+  margin: 10px;
+}
+
+.contact-phone p:last-child,
+.contact-mail p:last-child {
+  font-weight: bold;
+}
+
+.card {
+  border-radius: 0;
+  border: none;
+  background-color: var(--black);
+  color: white;
+}
+
+.post-list .post-title {
+  font-weight: bold;
+  text-align: center;
+}
+
+.post-list .post-content {
+  margin-top: 10px;
+  text-align: justify;
+}
+
+.post-list .post-date {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #797979;
+  margin-bottom: 15px;
+}
+
+.post-list a {
+  display: inline-block;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--red);
+  background-color: white;
+  padding: 5px 10px;
+  font-weight: bold;
+}
+
+.post-list a:hover {
+  color: white;
+  background-color: var(--red);
+}
+
+.post-detail .post-title {
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 48px;
+}
+
+.post-detail .post-subtitle {
+  text-align: center;
+  font-style: italic;
+  font-size: 24px;
+}
+
+.post-detail .post-content {
+  margin: 25px 0;
+  font-size: 28px;
+}
+
+.post-detail .post-footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.post-detail .post-author,
+.post-detail .post-date {
+  font-size: 14px;
+}
+
+.post-detail .post-back {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.post-detail .post-back a {
+  display: inline-block;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  background-color: var(--red);
+  padding: 5px 15px;
+  font-weight: bold;
+}
+
+.post-detail .post-back a:hover {
+  background-color: white;
+  color: var(--red);
+  border: 0.5px solid var(--red);
+}
+
+.title-form {
+  color: var(--red);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.post-form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.post-form .card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+p > input,
+p > textarea,
+p > select,
+form > input {
+  width: 100%;
+  padding: 5px;
+  margin: 5px;
+}
+
+.post-submit {
+  border: none;
+  background-color: white;
+  color: var(--red);
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 5px 15px;
+  font-weight: bold;
+  margin-top: 25px;
+}
+
+.post-submit:hover {
+  color: white;
+  background-color: var(--red);
+}

@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock title %}
+
+{% block content %}
+    <div class="container-fluid banner">
+        <div class="welcome">
+            <p class="welcome-text">Welcome!</p>
+            <p class="introduction-text">Read the most recently updates and news!</p>
+            <a href="{% url 'post_list' %}">Go to posts</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <p>EMPTY SPACE</p>
+        <p>EMPTY SPACE</p>
+        <p>EMPTY SPACE</p>
+        <p>EMPTY SPACE</p>
+        <p>EMPTY SPACE</p>
+    </div>
+{% endblock content %}

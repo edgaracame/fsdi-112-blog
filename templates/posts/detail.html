@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ post.title }}{% endblock title %}
+
+{% block content %}
+    <div class="container post-detail">
+        <p class="post-title">{{ post.title }}</p>
+        <p class="post-subtitle">"{{ post.subtitle }}"</p>
+        <p class="post-content">{{ post.body }}</p>
+        <div class="post-footer">
+            <p class="post-author"><i class="fa-solid fa-user"></i>&nbsp; {{ post.author }}</p>
+            <p class="post-date">&nbsp; <i class="fa-solid fa-clock"></i>&nbsp;  {{ post.created_on }}</p>
+        </div>
+        <div class="post-back">
+            <a href="{% url 'post_list' %}" class="card-text">Go back!</a>
+        </div>
+    </div>
+{% endblock content %}
