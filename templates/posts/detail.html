@@ -13,6 +13,12 @@
         </div>
         <div class="post-back">
             <a href="{% url 'post_list' %}" class="card-text">Go back!</a>
+            {% if user.id == post.author.id %}
+                <div class="post-extra" style="margin-top:5px;">
+                    <a href="{% url 'post_edit' post.id %}" class="card-text button-extra">Update</a>
+                    <a href="{% url 'post_delete' post.id %}" class="card-text button-extra">Delete</a>
+                </div>
+            {% endif %}
         </div>
     </div>
 {% endblock content %}
